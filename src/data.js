@@ -23,13 +23,10 @@ function showMovies (){
   fetch(`http://www.omdbapi.com/?i=tt`+ datos + `&apikey=13dc3330`)
  .then(response => response.json())
   .then(output => {
-
-  document.getElementById('probando').innerHTML += showData(output);
+    document.getElementById('probando').innerHTML += showData(output);
   })
-
 })
 }
-
 
 document.getElementById('potterImage').addEventListener('click',() =>{
   showMoviesS()
