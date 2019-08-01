@@ -1,34 +1,24 @@
-const mostrar = (data) => {
-  return `
-<div> 
-<img src="${data.Poster}">
-</div>
-<div>
-<h4>${data.Title}</h4>
-<p>Country : ${data.Country}</p>
-<p>Year : ${data.Year}  </p>
-<p>Director : ${data.Director}</p>
-<p>${data.Plot}</p>
-</div>
-`
-};
+const lotr = ['0120737','0167261','0167260','0903624','1170358','2310332'];
+const hp =['0241527','0295297','0304141','0330373','0373889','0417741','0926084','1201607'];
 
-const lordOfRings = [
-  'tt0120737',
-  'tt0167261',
-  'tt0167260',
-  'tt0903624',
-  'tt1170358',
+const getData = (titleId) =>{  
+  let data = [];
+  console.log(data);
+  fetch(`http://www.omdbapi.com/?i=tt${titleId}&apikey=13dc3330`)
+  .then(response => response.json())
+  .then(output => {
+    data.push(output);
+    showData(data);
+  })
+  .catch(err =>console.log(err))  
+};
+for (let i = 0 ; i< lotr.length ; i++){
+  const lotrr = getData(lotr[i]);
+}
+for (let i = 0 ; i< hp.length ; i++) {
+  const hpp = getData(hp[i]);
+}
+
   'tt2310332'
 ];
-function showMoviesLOR() {
-  lordOfRings.map(function(title) {
-    fetch('https://www.omdbapi.com/?i=' + title + '&apikey=f9e34039')
-      .then(movie => movie.json())
-      .then(data => {
-        document.getElementById('probando').innerHTML += mostrar(data);
-      })
-    })
-  }
 
-const  
