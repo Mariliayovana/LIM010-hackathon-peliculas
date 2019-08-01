@@ -1,7 +1,9 @@
-.container-gm {
-    margin-top: 10%;
+.bottom{
+    margin-top: 7%;
 }
-
+.font{
+    background-color:#e8e8e4;
+}
 .size {
-    max-height: 12em;
+height: 29em;
 }

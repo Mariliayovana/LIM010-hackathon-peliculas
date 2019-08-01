@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="boot/css/bootstrap.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="boot/css/style.css">
     <title>Rapi-Search</title>
   </head>
 
-  <body>
+  <body class="font">
+    
     <header>
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,18 +20,12 @@
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">Navbar</a>
-
+          <a class="center navbar-brand mx-auto" href="#">Rapi search</a>
+          <button type="button" class="btn btn-light"><i class='bx bxs-home' ></i></button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
               </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -37,19 +33,19 @@
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>
-        </nav>
+        </nav> 
       </div>
 
     </header>
 
     <section class="main container">
-      <div class="bd-example">
+      <!--carrusel-->
+      <section class="container">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-
-          </ol>
+</ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="img/potter.jpg" class="d-block w-100">
@@ -74,17 +70,34 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
-        <section class="container-gm">
-          <img src="img/sagaPotter.jpg" class="size rounded float-left" alt="saga Potter">
-          <img src="img/sagaSrAnillos.jpg" class="size rounded float-right" alt="saga Anillos">
-
-      </div>
-    </section>
+        </div> 
+      </section> 
+        <!--imagenes de portada-->
+        <section class="container bottom d-flex justify-content-around">
+            <div class="card size" style="width: 17rem;">
+                <img src="img/sagaPotter.jpg" class="card-img-top" alt="saga Potter">
+                <div class="card-body">
+                  <h5 class="card-title">saga harry potter</h5>
+                </div>
+              </div>
+              <div class="card size " style="width: 17rem;">
+                  <img src="img/sagaSrAnillos.jpg" class="card-img-top" alt="saga Anillos">
+                  <div class="card-body">
+                    <h5 class="card-title">Saga anillos</h5>
+                </div>
+                </div>
+          <!-- <img src="img/sagaPotter.jpg" class="size rounded float-left" alt="saga Potter">
+          <img src="img/sagaSrAnillos.jpg" class="size rounded float-right" alt="saga Anillos"> -->
+        </section>
+     </section>
+   
     <footer></footer>
 
     <script src="boot/js/jquery.js"></script>
     <script src="boot/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+ <script src="data.js"></script>
+
       </body>
 
 </html>
