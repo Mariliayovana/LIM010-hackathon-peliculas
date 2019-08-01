@@ -2,7 +2,7 @@ const showData = (data) => {
   let allData = '';
   data.forEach(objeto => { 
     return allData += `
-      <img class="" src=${objeto.Poster} alt="">
+      <img class="" src=${objeto.Poster} alt="${objeto.Title}">
       <p class="">${objeto.Title}</p>
       <p class="">Sinopsis: ${objeto.Plot}</p>
       <p class="">Actores: ${objeto.Actors}</p>
