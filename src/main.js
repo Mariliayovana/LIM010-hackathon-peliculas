@@ -20,6 +20,7 @@ document.getElementById('potterImage').addEventListener('click',()=>{
 for(let i=0; i< hp.length;i++){
   getData(hp[i]);
 }
+document.getElementById('carousel').classList.toggle('ocultar');
 document.getElementById('potterImage').classList.toggle('ocultar');
 document.getElementById('anilloImage').classList.toggle('ocultar');
 });
@@ -29,6 +30,14 @@ document.getElementById('anilloImage').addEventListener('click',()=>{
   for(let i=0; i< lotr.length;i++){
     getData(lotr[i]);
   }
+  document.getElementById('carousel').classList.toggle('ocultar');
   document.getElementById('potterImage').classList.toggle('ocultar');
   document.getElementById('anilloImage').classList.toggle('ocultar');
 });
+//evento para el home
+document.getElementById('home').addEventListener('click',()=>{
+  document.getElementById('carousel').classList.toggle('show');
+  document.getElementById('potterImage').classList.toggle('mostrar');
+  document.getElementById('anilloImage').classList.toggle('mostrar');
+  document.getElementById('probando').classList.toggle('ocultar')
+})
