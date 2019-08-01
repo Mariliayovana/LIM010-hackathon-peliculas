@@ -12,12 +12,12 @@ const getData = (titleId) =>{
   })
   .catch(err =>console.log(err))  
 };
-for (let i = 0 ; i< lotr.length ; i++){
-  const lotrr = getData(lotr[i]);
-}
-for (let i = 0 ; i< hp.length ; i++) {
-  const hpp = getData(hp[i]);
-}
+// for (let i = 0 ; i< lotr.length ; i++){
+//   const lotrr = getData(lotr[i]);
+// }
+// for (let i = 0 ; i< hp.length ; i++) {
+//   const hpp = getData(hp[i]);
+// }
 
   
 
