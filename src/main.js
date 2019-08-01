@@ -1,5 +1,5 @@
-const showData = (data) => {
-  let allData = '';
+  const showData = (data) => {
+    let allData = '';
   data.forEach(objeto => { 
     return allData += `
       <img class="" src=${objeto.Poster} alt="${objeto.Title}">
@@ -15,3 +15,20 @@ const showData = (data) => {
   });
     document.getElementById('probando').innerHTML += allData;
 };
+
+document.getElementById('potterImage').addEventListener('click',()=>{
+for(let i=0; i< hp.length;i++){
+  getData(hp[i]);
+}
+document.getElementById('potterImage').classList.toggle('ocultar');
+document.getElementById('anilloImage').classList.toggle('ocultar');
+});
+
+
+document.getElementById('anilloImage').addEventListener('click',()=>{
+  for(let i=0; i< lotr.length;i++){
+    getData(lotr[i]);
+  }
+  document.getElementById('potterImage').classList.toggle('ocultar');
+  document.getElementById('anilloImage').classList.toggle('ocultar');
+});
