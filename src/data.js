@@ -5,7 +5,6 @@ const getData = (titleId) => {
         .then(output => {
             data.push(output);
             showData(data);
-            filter(data);
             console.log(data);
             console.log(output);
         })
@@ -19,8 +18,8 @@ document.getElementById('anilloImage').addEventListener('click', () => {
 
 const hp = ['0241527', '0295297', '0304141', '0330373', '0373889', '0417741', '0926084', '1201607'];
 
-function showMovies() {
-    hp.map(function(datos) {
+showMovies = () => {
+    hp.map(getDates = (datos) => {
         fetch(`http://www.omdbapi.com/?i=tt` + datos + `&apikey=13dc3330`)
             .then(response => response.json())
             .then(output => {
@@ -34,8 +33,8 @@ document.getElementById('potterImage').addEventListener('click', () => {
 })
 const lotr = ['0120737', '0167261', '0167260', '0903624', '1170358', '2310332'];
 
-function showMoviesS() {
-    lotr.map(function(datos) {
+showMoviesS = () => {
+    lotr.map(getDates = (datos) => {
         fetch(`http://www.omdbapi.com/?i=tt` + datos + `&apikey=13dc3330`)
             .then(response => response.json())
             .then(output => {
