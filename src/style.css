@@ -1,6 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 .ocultar{
    display: none; 
 }
 .container-gm{
     display: block;
 }
+
+.card-container{
+    position: relative;
+    width: 18rem;
+    perspective: 200rem;
+    height: 412px;
+  }
+  .card-container:hover .card-back{
+    transform: rotateY(0deg);
+  }
+  .card-container:hover .card-front{
+    transform: rotateY(180deg);
+  }
+  .card-back{
+    transform: rotateY(180deg);
+  }
+  .cards{
+    position: absolute;
+    transition: all 0.8s;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+  .color{
+      background-color: #25415a;
+  }
