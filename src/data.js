@@ -1,16 +1,15 @@
+
 const getData = (titleId) => {
     let data = [];
+    
     fetch(`http://www.omdbapi.com/?i=tt${titleId}&apikey=13dc3330`)
         .then(response => response.json())
         .then(output => {
             data.push(output);
             showData(data);
-            console.log(data);
-            console.log(output);
-        })
+         })
+      
 };
-
-
 
 document.getElementById('anilloImage').addEventListener('click', () => {
     showMovies()
