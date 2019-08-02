@@ -11,11 +11,9 @@ const getData = (titleId) => {
       
 };
 
-document.getElementById('anilloImage').addEventListener('click', () => {
-    showMovies()
-})
 
 const hp = ['0241527', '0295297', '0304141', '0330373', '0373889', '0417741', '0926084', '1201607'];
+
 
 showMovies = () => {
     hp.map(getDates = (datos) => {
@@ -42,4 +40,7 @@ showMoviesS = () => {
             })
 
     })
+
+})
+
 }
