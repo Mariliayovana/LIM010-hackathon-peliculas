@@ -4,6 +4,7 @@ const showData = (objeto) => {
                         <p class="card-title-center">${objeto.Title}</p>
                       </div>`
   }
+ 
 // showData = (objeto) => {
 //   return  `
 //     <img class="rounded mx-auto d-block" src=${objeto.Poster} alt="${objeto.Title}">
@@ -24,13 +25,26 @@ document.getElementById('potterImage').addEventListener('click',()=>{
 for(let i=0; i< hp.length;i++){
   getData(hp[i]);
 }
+document.getElementById('carousel').classList.toggle('ocultar');
 document.getElementById('potterImage').classList.toggle('ocultar');
 document.getElementById('anilloImage').classList.toggle('ocultar');
 });
+
 document.getElementById('anilloImage').addEventListener('click',()=>{
   for(let i=0; i< lotr.length;i++){
     getData(lotr[i]);
   }
+  document.getElementById('carousel').classList.toggle('ocultar');
   document.getElementById('potterImage').classList.toggle('ocultar');
   document.getElementById('anilloImage').classList.toggle('ocultar');
+
 });
+
+document.getElementById('pelis').addEventListener('click', () =>{
+  document.getElementById('potterImage').classList.toggle('ocultar');
+  document.getElementById('anilloImage').classList.toggle('ocultar');
+  document.getElementById('probando').classList.toggle('mostrar');
+
+  
+}
+)
